@@ -13,10 +13,6 @@ spring:
           uri: lb://order-service
           predicates:
             - Path=/api/v1/orders/**
-        - id: file-service
-          uri: lb://file-service
-          predicates:
-            - Path=/api/v1/files/**
       globalcors:
         cors-configurations:
           '[/**]':
